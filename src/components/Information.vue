@@ -73,21 +73,12 @@ updated() {
 	
 	var tot = 0; //distanza complessiva
 		
-	var min = elev[0]; //elevazione minima
+	var min = Math.min.apply(null,elev); //elevazione minima
 		
-	var max = elev[0]; //elevazione massima
+	var max = Math.max.apply(null,elev); //elevazione massima
 
 	for (i = 1; i < elev.length; i++) {
 		dist.push(haversine(lat[i - 1], lon[i - 1], lat[i], lon[i]));
-		if (max < elev[i]) {
-		max = elev[i];
-		} //if
-	
-	
-		if (min > elev[i]) {
-		min = elev[i];
-		} //if-else
-	
 	} //for
 	dist_parziali[0] = 0;
 
