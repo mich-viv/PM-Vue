@@ -6,4 +6,4 @@ This is currently WIP since i still need to develop the backend for the backpack
 The library used as a support of this project are <b>OpenLayers</b> to plot on an OpenstreetMap all the trekking course, <b>Chartjs</b> to plot the elevation profile based on the course that the user chooses to see.
 
 A working demo is visible at:
-http://prova12345aaa.altervista.org/index.html
+<a href="http://prova12345aaa.altervista.org/index.html">Demo</a>
